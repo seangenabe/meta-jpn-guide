@@ -3,23 +3,25 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   return (
-    <>
-      <h1>Hi 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
-    </>
+    <section>
+      <h1>The Meta Japanese Language Resource Guide</h1>
+      <section>
+        <h2>Prerequisites</h2>
+      </section>
+      <section>
+        <h2>The Adventurer</h2>
+        <p></p>
+      </section>
+    </section>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "The Meta Japanese Language Resource Guide",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Learn not about Japanese but about how to learn it",
     },
   ],
 };
