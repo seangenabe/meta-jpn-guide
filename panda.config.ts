@@ -1,4 +1,4 @@
-import { defineConfig } from "@pandacss/dev";
+import { defineConfig } from "@pandacss/dev"
 
 export default defineConfig({
   jsxFramework: "qwik",
@@ -19,4 +19,22 @@ export default defineConfig({
 
   // The output directory for your css system
   outdir: "src/styled-system",
-});
+
+  globalCss: {
+    "a,:link": {
+      color: "blue.700",
+    },
+    p: {
+      lineHeight: "1.5",
+    },
+    ul: {
+      listStyle: "outside disc",
+    },
+    "ul,ol": {
+      margin: "0 0 1.5em 1.5em",
+    },
+    "li ul,li ol": {
+      margin: "0 0 1.5em 1.5em",
+    },
+  },
+})
