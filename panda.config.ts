@@ -19,7 +19,7 @@ export default defineConfig({
     semanticTokens: {
       colors: {
         bg: {
-          value: { base: "{colors.blue.300}", _dark: "{colors.black}" },
+          value: { base: "{colors.white}", _dark: "{colors.black}" },
         },
         bgShade: {
           value: { base: "{colors.blue.400}", _dark: "{colors.blue.900}" },
@@ -29,6 +29,9 @@ export default defineConfig({
         },
         fg: {
           value: { base: "{colors.black}", _dark: "{colors.white}" },
+        },
+        bgSecondary: {
+          value: { base: "{colors.gray.100}", _dark: "{colors.gray.800}" },
         },
       },
     },
