@@ -23,10 +23,10 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang="en" class="dark">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
     </QwikCityProvider>
-  );
+  )
 });
