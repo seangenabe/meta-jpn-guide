@@ -3,6 +3,7 @@
   "private": true,
   "description": "App with Routing built-in ready to create your app",
   "scripts": {
+    "prebuild": "npm run build-sakubi",
     "build": "qwik build",
     "build-sakubi": "npx tsx src/scripts/update-sakubi.ts",
     "build.client": "vite build",
