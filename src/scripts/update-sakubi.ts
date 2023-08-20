@@ -15,7 +15,7 @@ async function main() {
     "unihan test.png",
   ]
 
-  const root = await packageDirectory({ cwd: ".." })
+  const root = (await packageDirectory({ cwd: ".." })) ?? process.cwd()
 
   await Promise.all(
     images.map(async (image) => {
