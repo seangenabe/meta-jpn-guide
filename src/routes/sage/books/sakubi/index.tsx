@@ -3,7 +3,6 @@ import { routeLoader$ } from "@builder.io/qwik-city"
 import { readFile } from "node:fs/promises"
 import { packageDirectory } from "pkg-dir"
 import { styled } from "~/styled-system/jsx"
-import { container } from "~/styled-system/patterns"
 
 export const useSakubiBody = routeLoader$(async () => {
   const root = await packageDirectory()
