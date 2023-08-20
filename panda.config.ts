@@ -80,6 +80,11 @@ export default defineConfig({
         marginTop: "0",
         marginX: "6",
       },
+      details: {
+        border: "1px solid gray",
+        padding: "2",
+        mt: "4",
+      },
     },
   },
 })
