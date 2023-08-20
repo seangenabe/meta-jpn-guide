@@ -53,15 +53,25 @@ export default defineConfig({
       h2: {
         fontSize: "2xl",
         borderBottom: "1px solid black",
-        marginTop: "6",
+        marginTop: "8",
       },
       h3: {
         fontSize: "4",
-        marginTop: "4",
+        marginTop: "8",
         fontWeight: "bold",
       },
-      h4: { fontSize: "lg", marginTop: "xl" },
-      h5: { fontSize: "md", marginTop: "xl" },
+      h4: {
+        fontSize: "4",
+        marginTop: "8",
+        paddingStart: "4",
+        fontWeight: "bold",
+      },
+      h5: {
+        fontSize: "4",
+        marginTop: "8",
+        paddingStart: "8",
+        fontWeight: "bold",
+      },
       "a, :link": {
         color: "blue.700",
       },
@@ -84,6 +94,9 @@ export default defineConfig({
         border: "1px solid gray",
         padding: "2",
         mt: "4",
+      },
+      td: {
+        px: "4",
       },
     },
   },
