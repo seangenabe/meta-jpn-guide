@@ -3,7 +3,6 @@
   "private": true,
   "description": "App with Routing built-in ready to create your app",
   "scripts": {
-    "prebuild": "npm run build-sakubi",
     "build": "qwik build",
     "build-sakubi": "npx tsx src/scripts/update-sakubi.ts",
     "build.client": "vite build",
@@ -35,7 +34,7 @@
     "jsdom": "^22.1.0",
     "ky": "^0.33.3",
     "pkg-dir": "^7.0.0",
-    "prettier": "2.8.8",
+    "prettier": "^3.0.2",
     "typescript": "5.1.6",
     "undici": "5.22.1",
     "vite": "4.4.0",

@@ -1,5 +1,5 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { component$ } from "@builder.io/qwik"
+import type { DocumentHead } from "@builder.io/qwik-city"
 import { Card } from "./card"
 import { VStack } from "~/styled-system/jsx"
 
@@ -73,4 +73,4 @@ export const head: DocumentHead = {
       content: "Learn not about Japanese but about how to learn it",
     },
   ],
-};
+}
