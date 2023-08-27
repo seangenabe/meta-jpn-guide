@@ -30,6 +30,12 @@ export default defineConfig({
         fg: {
           value: { base: "{colors.black}", _dark: "{colors.white}" },
         },
+        fgLink: {
+          value: { base: "{colors.blue.700}", _dark: "{colors.blue.500}" },
+        },
+        fgLinkExternal: {
+          value: { base: "{colors.cyan.700}", _dark: "{colors.cyan.500}" },
+        },
         bgSecondary: {
           value: { base: "{colors.gray.100}", _dark: "{colors.gray.800}" },
         },
@@ -52,7 +58,9 @@ export default defineConfig({
       h1: { fontSize: "3xl", fontWeight: "bold", marginTop: "8" },
       h2: {
         fontSize: "2xl",
-        borderBottom: "1px solid black",
+        borderBottomWidth: "1px",
+        borderBottomStyle: "solid",
+        borderBottomColor: "fg",
         marginTop: "8",
       },
       h3: {
@@ -73,7 +81,13 @@ export default defineConfig({
         fontWeight: "bold",
       },
       "a, :link": {
-        color: "blue.700",
+        color: "fgLink",
+      },
+      'a[href*="://"]': {
+        color: "fgLinkExternal",
+      },
+      'a[href*="://"]:after': {
+        content: '" ⮵"',
       },
       p: {
         lineHeight: "1.5",

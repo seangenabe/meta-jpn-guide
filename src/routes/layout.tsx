@@ -26,7 +26,11 @@ export default component$(() => {
       <Header />
       <styled.div flex="1">
         <div class={container({})}>
-          <styled.div class="prose" px={{ base: "4", md: "8" }}>
+          <styled.div
+            class="prose"
+            px={{ base: "4", md: "8" }}
+            paddingBottom="8"
+          >
             <Slot />
           </styled.div>
         </div>

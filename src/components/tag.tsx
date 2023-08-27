@@ -7,7 +7,7 @@ export interface TagProps {
   id?: string
 }
 
-export const Tag = component$<TagProps>(({ id }) => {
+export const Tag = component$<TagProps>(({ id: ids }) => {
   const styles = css({
     rounded: "lg",
     bg: "bgSecondary",
@@ -18,13 +18,18 @@ export const Tag = component$<TagProps>(({ id }) => {
     py: "0.5",
   })
 
-  if (id != null) {
+  if (ids != null) {
     return (
-      <Link href={`/tags/${id}`} class={styles}>
-        {(tagDescriptions[id as keyof typeof tagDescriptions] as
-          | string
-          | undefined) ?? toTitleCase(id)}
-      </Link>
+      <>
+        {ids.split(" ").map((id) => (
+          <Link href={`/tags/${id}`} class={styles} key={id}>
+            {(tagDescriptions[id as keyof typeof tagDescriptions] as
+              | string
+              | undefined) ?? toTitleCase(id)}
+            <Slot />
+          </Link>
+        ))}
+      </>
     )
   }
 
